@@ -1,0 +1,61 @@
+@use 'variables'as *;
+@use 'typography'as *;
+
+/* ---------- Text ---------- */
+
+h1 {
+    font-size: 3.68rem; //73px
+    line-height: 100px;
+}
+
+h2 {
+    font-size: 2.4rem; //48px
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 1.5rem; //30px
+    line-height: 36px;
+}
+
+@mixin copy-24 {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+@mixin copy-18 {
+    font-size: 0.9rem;
+    line-height: 27px;
+}
+
+
+/* ---------- Spacing ---------- */
+
+@mixin section-padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+/* ---------- Containers ---------- */
+
+@mixin container-1780 {
+    width: 1780px;
+    margin: 0 auto;
+    position: relative;
+  
+    @media (max-width: 1600px) {
+      width: 95%;
+    }
+}
+
+@mixin container-1526 {
+    width: 1526px;
+    margin: 0 auto;
+    position: relative;
+  
+    @media (max-width: 1600px) {
+      width: 95%;
+    }
+}
+

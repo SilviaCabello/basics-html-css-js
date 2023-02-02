@@ -1,0 +1,39 @@
+//--------- Gotham Bold ---------///
+
+@font-face {
+    src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+    font-family: gothamBold;
+}
+
+@mixin gotham-bold {
+    font-family: gothamBold;
+    font-weight: 700;
+    font-style: normal;
+}
+
+//--------- Gotham Medium ---------///
+
+@font-face {
+    src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+    font-family: gothamMedium;
+}
+
+@mixin gotham-medium {
+    font-family: gothamMedium;
+    font-weight: 500;
+    font-style: normal;
+}
+
+//--------- Gotham Book ---------///
+
+@font-face {
+    src: url("../../assets/fonts/GothamNarrow-Book.otf");
+    font-family: gothamBook;
+}
+
+@mixin gotham-book {
+    font-family: gothamBook;
+    font-weight: 400;
+    font-style: normal;
+}
+
