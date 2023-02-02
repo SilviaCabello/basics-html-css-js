@@ -899,6 +899,78 @@ h3 {
   object-position: center;
 }
 
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
+.three_pics_banner {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100vw;
+  height: 640px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.three_pics_banner .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.three_pics_banner .text {
+  background-color: #CFC364;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.three_pics_banner .text a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.8rem;
+  line-height: 80px;
+}
+
 @media (max-width: 430px) {
   html {
     font-size: 16px;

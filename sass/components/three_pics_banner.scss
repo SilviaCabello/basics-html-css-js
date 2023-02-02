@@ -1,0 +1,34 @@
+@use '../base'as *;
+
+.three_pics_banner {
+    @include section-padding;
+    width: 100vw;
+    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .pic {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .text {
+        background-color: $light-ocher;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+            // text-align: left;
+            font-size: 2.8rem;
+            line-height: 80px;
+        }
+    }
+}
