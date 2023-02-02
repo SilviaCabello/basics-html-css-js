@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+.bold {
+    @include gotham-bold;
+}
+
 //--------- Gotham Medium ---------///
 
 @font-face {
@@ -22,6 +26,10 @@
     font-family: gothamMedium;
     font-weight: 500;
     font-style: normal;
+}
+
+.medium {
+    @include gotham-medium;
 }
 
 //--------- Gotham Book ---------///

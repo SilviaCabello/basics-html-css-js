@@ -6,6 +6,7 @@
 
 html {
     font-family: gothamBook;
+    font-weight: 400;
     color: $copy;
     font-size: 20px;
     line-height: 35px;
@@ -18,7 +19,10 @@ body {
 }
 
 
-// @import 'components/nav';
+@import 'components/copyright';
+@import 'components/nav';
+@import 'components/hero';
+@import 'components/text_and_picture';
 
 
 @media (max-width: 430px) {
