@@ -1,0 +1,31 @@
+@use '../base'as *;
+
+.blue-btn {
+    text-decoration: none;
+    display: block;
+    font-family: gothamMedium;
+    color: white;
+    background-color: $dark-blue;
+    padding: 18px 40px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $medium-ocher;
+    }
+}
+
+.blue-border-btn {
+    text-decoration: none;
+    display: block;
+    font-family: gothamMedium;
+    color: $medium-blue;
+    background-color: transparent;
+    border: 1px solid $medium-blue;
+    padding: 18px 40px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $medium-blue;
+        color: white;
+    }
+}

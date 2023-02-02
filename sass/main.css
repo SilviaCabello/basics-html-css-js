@@ -418,6 +418,78 @@ body {
   overflow-x: hidden;
 }
 
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
+.blue-btn {
+  text-decoration: none;
+  display: block;
+  font-family: gothamMedium;
+  color: white;
+  background-color: #00396B;
+  padding: 18px 40px;
+  transition: all 0.3s ease-in-out;
+}
+.blue-btn:hover {
+  background-color: #A09600;
+}
+
+.blue-border-btn {
+  text-decoration: none;
+  display: block;
+  font-family: gothamMedium;
+  color: #7287BB;
+  background-color: transparent;
+  border: 1px solid #7287BB;
+  padding: 18px 40px;
+  transition: all 0.3s ease-in-out;
+}
+.blue-border-btn:hover {
+  background-color: #7287BB;
+  color: white;
+}
+
 .copy {
   display: block;
   position: absolute;
@@ -452,6 +524,13 @@ body {
 
 .copy:hover span.copy_text {
   max-width: 100%;
+}
+
+.deco_left_center::after {
+  content: url("../../assets/svg/logo-deco.svg");
+  position: absolute;
+  left: -27%;
+  z-index: -1;
 }
 
 /* ---------- Colors ---------- */
@@ -716,6 +795,27 @@ h3 {
   opacity: 45%;
 }
 
+.swiper_images {
+  width: 100%;
+  height: 480px;
+  padding-bottom: 50px;
+}
+.swiper_images .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper_images .swiper-pagination {
+  bottom: 0px;
+}
+.swiper_images .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 30px;
+  height: 16px;
+  background: #00396B;
+}
+
 /* ---------- Colors ---------- */
 /* ---------- Spacing ---------- */
 @font-face {
@@ -786,6 +886,11 @@ h3 {
 }
 .text_and_picture .text .paragraphs p:not(:first-of-type) {
   margin-top: 1.8rem;
+}
+.text_and_picture .text .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
 }
 .text_and_picture .picture img {
   width: 100%;
