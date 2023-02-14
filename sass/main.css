@@ -577,6 +577,66 @@ h3 {
 
 /* ---------- Spacing ---------- */
 /* ---------- Containers ---------- */
+.footer {
+  background-color: #00396B;
+  margin-top: 6rem;
+  padding: 1.8rem 0;
+}
+.footer__content {
+  width: 1780px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1600px) {
+  .footer__content {
+    width: 95%;
+  }
+}
+
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
 .four_columns_pic {
   width: 1526px;
   margin: 0 auto;

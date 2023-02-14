@@ -1,0 +1,11 @@
+@use '../base'as *;
+
+.footer {
+    background-color: $dark-blue;
+    margin-top: 6rem;
+    padding: 1.8rem 0;
+
+    &__content {
+        @include container-1780;
+    }
+}
