@@ -951,6 +951,9 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.three_pics_banner .pic {
+  position: relative;
+}
 .three_pics_banner .pic img {
   width: 100%;
   height: 100%;
@@ -959,16 +962,20 @@ h3 {
 }
 .three_pics_banner .text {
   background-color: #CFC364;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 .three_pics_banner .text a {
   color: white;
   text-decoration: none;
+  text-align: left;
   font-size: 2.8rem;
   line-height: 80px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 430px) {
