@@ -1546,6 +1546,85 @@ h3 {
 
 /* ---------- Spacing ---------- */
 /* ---------- Containers ---------- */
+.three_columns_text {
+  width: 1526px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1600px) {
+  .three_columns_text {
+    width: 95%;
+  }
+}
+.three_columns_text .columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.three_columns_text .columns__item {
+  padding-left: 1.125rem;
+  position: relative;
+}
+.three_columns_text .columns__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #B7C7DF;
+  top: 0;
+  left: 0;
+}
+.three_columns_text .columns__item p {
+  padding-top: 1.6rem;
+}
+
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
 .three_pics_banner {
   padding-top: 90px;
   padding-bottom: 90px;
