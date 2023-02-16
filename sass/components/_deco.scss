@@ -17,3 +17,15 @@
         top: 120px;
     }
 }
+
+.square_deco {
+    position: relative;
+
+    &::after {
+        content: url("/assets/svg/headline-deco.svg");
+        position: absolute;
+        left: -47px;
+        top: -47px;
+        z-index: -1;
+    }
+}

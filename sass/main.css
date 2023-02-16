@@ -573,6 +573,17 @@ button.blue-btn {
   top: 120px;
 }
 
+.square_deco {
+  position: relative;
+}
+.square_deco::after {
+  content: url("/assets/svg/headline-deco.svg");
+  position: absolute;
+  left: -47px;
+  top: -47px;
+  z-index: -1;
+}
+
 /* ---------- Colors ---------- */
 /* ---------- Spacing ---------- */
 @font-face {
@@ -1273,6 +1284,12 @@ h3 {
   height: 428px;
   object-fit: cover;
   object-position: center;
+}
+.text_and_picture--vertical .picture img {
+  height: 800px;
+}
+.text_and_picture--vertical .text {
+  padding-top: 6rem;
 }
 
 /* ---------- Colors ---------- */

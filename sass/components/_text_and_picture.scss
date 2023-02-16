@@ -7,10 +7,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 4.5rem;
 
-    // .text > *:first-child {
-    //    background-color: red;
-    // }
-
     .text > *:not(:first-child) {
         padding: $space-xxs 0;
     }
@@ -45,6 +41,18 @@
             height: 428px;
             object-fit: cover;
             object-position: center;
+        }
+    }
+
+    &--vertical {
+        .picture {
+            img {
+                height: 800px;
+            }
+        }
+
+        .text {
+            padding-top: $space-l;
         }
     }
 }
