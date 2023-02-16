@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: center;
 
+    &--small {
+        height: calc(76vh - 8.9rem);
+    }
+
     &__text {
         @include container-1526;
         z-index: 1;

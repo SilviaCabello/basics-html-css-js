@@ -1,8 +1,19 @@
-.deco_left_center {
+.deco_left {
     &::after {
         content: url("../../assets/svg/logo-deco.svg");
         position: absolute;
         left: -27%;
         z-index: -1;
+        top: 0;
+    }
+}
+
+.deco_right_top{
+    &::after {
+        content: url("../../assets/svg/logo-deco.svg");
+        position: absolute;
+        right: -28%;
+        z-index: -1;
+        top: 120px;
     }
 }

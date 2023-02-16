@@ -1,6 +1,6 @@
 @use '../base'as *;
 
-.section_headline {
+.section_header {
     padding-bottom: $space-s;
     
     h2 {
@@ -16,5 +16,11 @@
             top: -47px;
             z-index: -1;
         }
+
+    }
+
+    p {
+        width: 50%;
+        padding-top: $space-xs;
     }
 }
