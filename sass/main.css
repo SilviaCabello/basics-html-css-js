@@ -1054,6 +1054,72 @@ h3 {
 
 /* ---------- Spacing ---------- */
 /* ---------- Containers ---------- */
+.header_and_paragraph {
+  width: 1526px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1600px) {
+  .header_and_paragraph {
+    width: 95%;
+  }
+}
+.header_and_paragraph .section_header h3 {
+  padding-bottom: 1.8rem;
+}
+.header_and_paragraph .paragraphs {
+  width: 75%;
+}
+.header_and_paragraph .paragraphs p:not(:first-of-type) {
+  padding-top: 1.8rem;
+}
+
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
 .hero {
   width: 100vw;
   height: calc(100vh - 8.9rem);
@@ -1161,14 +1227,12 @@ h3 {
 
 /* ---------- Spacing ---------- */
 /* ---------- Containers ---------- */
-.section_header {
-  padding-bottom: 3.2rem;
-}
 .section_header h2 {
   font-family: gothamBook;
   font-weight: 400;
   max-width: 60%;
   position: relative;
+  padding-bottom: 3.2rem;
 }
 .section_header h2::after {
   content: url("/assets/svg/headline-deco.svg");
@@ -1645,6 +1709,11 @@ h3 {
 .three_pics_banner .text {
   background-color: #CFC364;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.three_pics_banner .text:hover {
+  background-color: #868120;
 }
 .three_pics_banner .text a {
   color: white;
@@ -1829,6 +1898,71 @@ h3 {
 
 .display4 .row {
   display: grid !important;
+}
+
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Bold.otf");
+  font-family: gothamBold;
+}
+.bold {
+  font-family: gothamBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Medium.otf");
+  font-family: gothamMedium;
+}
+.medium {
+  font-family: gothamMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../../assets/fonts/GothamNarrow-Book.otf");
+  font-family: gothamBook;
+}
+/* ---------- Text ---------- */
+h1 {
+  font-size: 3.68rem;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* ---------- Spacing ---------- */
+/* ---------- Containers ---------- */
+.two_columns_text {
+  width: 1526px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1600px) {
+  .two_columns_text {
+    width: 95%;
+  }
+}
+.two_columns_text .section_header h3 {
+  padding-bottom: 1.8rem;
+}
+.two_columns_text .columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
 }
 
 @media (max-width: 430px) {
