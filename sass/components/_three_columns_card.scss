@@ -4,6 +4,20 @@
     @include container-1526;
     @include section-padding;
 
+    &--load6 {
+        .columns {
+            .card {
+                display: none;
+
+                &:nth-of-type(1), &:nth-of-type(2), 
+                &:nth-of-type(3), &:nth-of-type(4),
+                &:nth-of-type(5), &:nth-of-type(6) {
+                    display: block;
+                }
+            }
+        }
+    }
+
     .columns {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -12,13 +26,6 @@
         .card {
             position: relative;
             cursor: pointer;
-            display: none;
-
-            &:nth-of-type(1), &:nth-of-type(2), 
-            &:nth-of-type(3), &:nth-of-type(4),
-            &:nth-of-type(5), &:nth-of-type(6) {
-                display: block;
-            }
 
             &:hover .pic__wrapper {
                 -webkit-transform: scale(1.1);
@@ -103,5 +110,11 @@
 
     .blue-btn {
         margin-top: $space-l;
+    }
+}
+
+.display {
+    div {
+        display: block !important;
     }
 }

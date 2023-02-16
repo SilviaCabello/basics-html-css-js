@@ -37,6 +37,7 @@
                 position: relative;
                 width: fit-content;
                 @include copy-24;
+                @include gotham-medium;
 
                 &::after {
                     content: "";
@@ -115,5 +116,27 @@
 
     .row ~ .row {
         margin-top: 4rem;
+    }
+
+    &--load4 {
+        .row {
+            display: none;
+
+            &:nth-of-type(1), &:nth-of-type(2),
+            &:nth-of-type(3) {
+                display: grid;
+            }
+           
+        }
+    }
+
+    .blue-btn {
+        margin-top: $space-l;
+    }
+}
+
+.display4 {
+    .row {
+        display: grid !important;
     }
 }
