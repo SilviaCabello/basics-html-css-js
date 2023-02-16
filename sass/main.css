@@ -581,16 +581,63 @@ h3 {
   background-color: #00396B;
   margin-top: 6rem;
   padding: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
 }
-.footer__content {
+.footer__top {
   width: 1780px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 1600px) {
-  .footer__content {
+  .footer__top {
     width: 95%;
   }
+}
+.footer__top a .footer_logo {
+  width: 186px;
+}
+.footer__top ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer__top ul li {
+  list-style: none;
+}
+.footer__top ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.footer__top ul li a:hover {
+  color: #B7C7DF;
+}
+.footer__top ul li:not(:first-of-type) {
+  margin-left: 77px;
+}
+.footer__bottom {
+  width: 1780px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+@media (max-width: 1600px) {
+  .footer__bottom {
+    width: 95%;
+  }
+}
+.footer__bottom p {
+  color: white;
+  font-size: 17px;
 }
 
 /* ---------- Colors ---------- */
