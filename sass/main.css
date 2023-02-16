@@ -1066,7 +1066,7 @@ h3 {
     width: 95%;
   }
 }
-.header_and_paragraph .section_header h3 {
+.header_and_paragraph h3 {
   padding-bottom: 1.8rem;
 }
 .header_and_paragraph .paragraphs {
@@ -1227,12 +1227,14 @@ h3 {
 
 /* ---------- Spacing ---------- */
 /* ---------- Containers ---------- */
+.section_header {
+  padding-bottom: 3.2rem;
+}
 .section_header h2 {
   font-family: gothamBook;
   font-weight: 400;
   max-width: 60%;
   position: relative;
-  padding-bottom: 3.2rem;
 }
 .section_header h2::after {
   content: url("/assets/svg/headline-deco.svg");
@@ -1956,7 +1958,7 @@ h3 {
     width: 95%;
   }
 }
-.two_columns_text .section_header h3 {
+.two_columns_text h3 {
   padding-bottom: 1.8rem;
 }
 .two_columns_text .columns {

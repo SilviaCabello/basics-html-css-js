@@ -4,12 +4,10 @@
     @include container-1526;
     @include section-padding;
 
-    .section_header {
-        h3 {
-            padding-bottom: $space-xs;
-        }
+    h3 {
+        padding-bottom: $space-xs;
     }
-
+ 
     .columns {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -3,12 +3,11 @@
 .header_and_paragraph {
     @include container-1526;
     @include section-padding;
-    
-    .section_header {
-        h3 {
-            padding-bottom: $space-xs;
-        }
+
+    h3 {
+        padding-bottom: $space-xs;
     }
+
 
     .paragraphs {
         width: 75%;
