@@ -1,0 +1,25 @@
+@use '../base'as *;
+
+.nav {
+    width: 100vw;
+    z-index: 99999;
+    background-color: rgb(176, 251, 255);
+    height: 100px;
+    padding: 0 100px;
+}
+
+
+.hero {
+    padding: 100px 100px;
+}
+
+.test {
+    padding: 100px 100px;
+}
+
+.footer {
+    width: 100vw;
+    background-color: rgb(176, 251, 255);
+    height: 100px;
+    padding: 0 100px;
+}
